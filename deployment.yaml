@@ -16,6 +16,7 @@ spec:
   selector:
     app: nginx-proxy
     release: nginx-proxy
+    version: Initial
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -26,10 +27,10 @@ metadata:
     app: nginx-proxy
     release: nginx-proxy
 spec:
-  strategy:
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
+strategy:
+  rollingUpdate:
+    maxUnavailable: 25%
+    maxSurge: 25%
   replicas: 1
   selector:
     matchLabels:
