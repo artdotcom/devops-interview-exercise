@@ -11,4 +11,4 @@ Exercise:
 1.	Build a docker image with the provided nginx.conf
 2.	Deploy the image with the provided "deployment.yaml" file.
 3.	Identify the issues preventing the container from starting.
-4.	Confirm nginx is service traffic via ingress. 
+4.	Confirm nginx is servicing traffic via ingress. 
